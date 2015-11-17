@@ -172,6 +172,7 @@ function cp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cp_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */
@@ -196,3 +197,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+

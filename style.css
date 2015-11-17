@@ -669,7 +669,8 @@ header {
   top: initial;
   position: absolute;
   overflow: hidden;
-  background-color: #eee; }
+  background-color: #eee;
+  z-index: 9999; }
 
 .sub-menu a {
   display: inline-block;
@@ -932,7 +933,7 @@ header {
       #home-products .product p {
         font-size: 1.125em; } }
 #home-slider {
-  background: #e7e7e7; }
+  background: pink; }
   #home-slider .slider {
     max-width: 730px;
     margin: 0px auto; }
@@ -963,11 +964,11 @@ header {
     content: "";
     display: table; }
   .image-grp .image-button {
-    height: 20px;
-    outline: 4px solid white;
+    position: relative;
+    outline: 4px solid red;
     background-color: white;
     cursor: pointer;
-    height: inherit;
+    height: 92px;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -975,12 +976,12 @@ header {
     .image-grp .image-button:last-child {
       margin-right: 0; }
     .image-grp .image-button:hover {
-      outline: 4px solid white; }
+      outline: 4px solid red; }
   .image-grp .image-button img {
     width: 100%;
     box-shadow: #333 1px 1px 5px; }
   .image-grp .inactive {
-    outline: 0px solid white; }
+    outline: 0px solid red; }
 
 .slide-content {
   position: absolute;

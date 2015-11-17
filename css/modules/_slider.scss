@@ -1,12 +1,12 @@
 #home-slider{
-    background: $light-gray;
+    background: pink;
     
     .slider {
         max-width: 730px;
         margin: 0px auto;
     }
     .slide-viewer {
-        position: relative;
+       position: relative;
         /* needed for IE7 */
         overflow: hidden;
         height: 300px;
@@ -35,14 +35,14 @@
     top: -10px;
     @include outer-container;
         .image-button {
-            height:20px;
-            outline: 4px solid white;
+            position: relative;
+            outline: 4px solid red;
             background-color: white;
             cursor: pointer;
-            height: inherit;
+            height: $thumbnail-height;
             @include span-columns(3);
                 &:hover {
-                    outline: 4px solid white; 
+                    outline: 4px solid red; 
             }
             
         }
@@ -51,7 +51,7 @@
             box-shadow: $dark-gray 1px 1px 5px;
         }
         .inactive{
-            outline: 0px solid white;;
+            outline: 0px solid red;
         }
 }
 
