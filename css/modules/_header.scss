@@ -1,5 +1,38 @@
 //header desktop//
 
+#top-bar{
+	background-color: $light-gray;
+	#top-nav{
+		@include outer-container;
+		.menu{
+			margin-top: 0px;
+		}
+		.menu-top-menu-container{
+			    float: left;
+			    width: 95%;
+			    margin-top: 0px;
+
+			    ul{
+			    	border: green solid 1px;
+				    float: right;
+				    text-align: right;
+
+				     li{
+			    		display: inline-block;
+			    	}
+			    }
+			   
+		}
+		.search{
+			border: purple solid 1px;
+			float: left;
+			width: 5%;
+		}
+
+	}
+}
+
+
 header{
 	padding: 17px 10px 22px 10px;
 	@include outer-container;

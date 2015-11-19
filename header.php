@@ -24,13 +24,19 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cp' ); ?></a>
+	
+	<div id="top-bar">
+		<nav id="top-nav">
+			<?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+			<div class="search">look</div>
+		</nav>
+	</div>
+
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<a href="<?php bloginfo( 'url' ); ?>">
     			<img id="logo" src="<?php bloginfo('template_directory'); ?>/img/header/logo.svg" alt="logo">
-    			<p id="company">Company Name</p>
 		    </a>
 		    <nav id="mobile-nav">
 				<div class="hamburger">&#9776;</div>

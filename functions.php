@@ -47,6 +47,7 @@ function cp_setup() {
 	  	register_nav_menus(
 		    array(
 		      'primary-menu' => __( 'Primary Menu' ),
+		      'top-menu' => __( 'Top Menu' ),
 		      'footer-menu' => __( 'Footer Menu' )
 		    )
 	  	);

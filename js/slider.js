@@ -90,10 +90,10 @@ $('.slider').each(function () { // For every slider
             }
         })
         $('#left-arrow').on('click', function () {
-            if (currentIndex < ($slides.length - 1)) { // If slide < total slides
-                move(currentIndex - 1); // Move to next slide
-            } else { // Otherwise
-                move(0); // Move to the first slide
+            if (currentIndex === 0) { // If slide = first slide
+                move(3);
+            }else { // Otherwise
+                move(currentIndex - 1);
             }
         })
     }
