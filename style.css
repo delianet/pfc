@@ -586,19 +586,14 @@ html {
     #top-bar #top-nav .menu {
       margin-top: 0px; }
     #top-bar #top-nav .menu-top-menu-container {
-      float: left;
-      width: 95%;
       margin-top: 0px; }
       #top-bar #top-nav .menu-top-menu-container ul {
+        width: 100%;
         border: green solid 1px;
         float: right;
         text-align: right; }
         #top-bar #top-nav .menu-top-menu-container ul li {
           display: inline-block; }
-    #top-bar #top-nav .search {
-      border: purple solid 1px;
-      float: left;
-      width: 5%; }
 
 header {
   padding: 17px 10px 22px 10px;
@@ -886,6 +881,106 @@ header {
 @media (max-width: 768px) {
   .jumbo-wrapper h1 {
     padding: 25px 10px; } }
+.nav-search {
+  padding-left: 10px; }
+
+.nav-search .search-form {
+  position: relative; }
+
+.nav-search .search-field {
+  float: right;
+  background-color: transparent;
+  background-image: url(img/search-icon.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  margin: -5px 0 !important;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 400ms ease, background 400ms ease;
+  transition: width 400ms ease, background 400ms ease;
+  width: 0; }
+
+.nav-search .search-field {
+  float: right;
+  background-color: transparent;
+  background-image: url(img/search-icon.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  margin: 0px 0;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 400ms ease, background 400ms ease;
+  transition: width 400ms ease, background 400ms ease;
+  width: 0; }
+
+.nav-search .search-field:focus {
+  background-image: url(img/search-icon.png);
+  background-color: #fff;
+  cursor: text;
+  outline: 0;
+  width: 230px; }
+
+.search-form
+.search-submit {
+  display: none; }
+
+.testimonials {
+  border: green solid 1px;
+  background-image: url("");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #e4e4e4; }
+  .testimonials blockquote {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, serif;
+    border: red solid 1px;
+    padding: 20px;
+    position: relative;
+    color: #383838; }
+    .testimonials blockquote::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .testimonials blockquote:before {
+      display: block;
+      content: "\201C";
+      font-size: 5em;
+      position: absolute;
+      left: -20px;
+      top: -15px;
+      color: #7a7a7a; }
+    .testimonials blockquote cite {
+      color: red;
+      font-size: 0.875em;
+      font-style: normal;
+      display: block;
+      margin-top: 5px;
+      text-transform: uppercase; }
+    .testimonials blockquote .test-author {
+      float: right;
+      margin-right: 105px; }
+  .testimonials h3 {
+    line-height: 1.75; }
+    .testimonials h3:after {
+      content: "\201D";
+      font-family: Georgia, serif;
+      font-size: 2.5em;
+      position: relative;
+      top: 15px;
+      color: #7a7a7a;
+      padding-left: 5px;
+      line-height: .2; }
+
 #home-info {
   width: 100%;
   border: pink solid 1px; }

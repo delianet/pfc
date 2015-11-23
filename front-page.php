@@ -115,6 +115,15 @@ get_header(); ?>
     	</div>
     </section>
 
+    <section class="testimonials">
+         <blockquote>
+             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nostrum, suscipit molestias, fugiat aliquam assumenda.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis numquam quasi explicabo minus.</h3>
+            <cite>Read More Testimonials <span class="test-author">- M.M.</span></cite>  
+         </blockquote>
+            
+       
+    </section>
+
 
 <?php get_footer(); ?>
 

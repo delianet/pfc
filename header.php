@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <?php wp_head(); ?>
 </head>
@@ -28,8 +29,17 @@
 	<div id="top-bar">
 		<nav id="top-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
-			<div class="search">look</div>
 		</nav>
+		
+		<li class="nav-search">
+			<form role="search" method="get" class="search-form" action="http://localhost/pfc/">
+				<label>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>	
+		</li>
+	
 	</div>
 
 

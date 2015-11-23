@@ -14,20 +14,49 @@
 	</div><!-- #content -->
 
 	<footer id="footer" class="site-footer" role="contentinfo">
+
+
+							<?php 
+				$checking = array(
+				'depth'        => 1,
+				'date_format'  => get_option('date_format'),
+				'title_li'	   => '',
+				'child_of'     => 26,
+				'echo'         => 1,
+				'sort_column'  => 'menu_order');
+				$savings = array(
+				'depth'        => 1,
+				'date_format'  => get_option('date_format'),
+				'title_li'	   => '',
+				'child_of'     => 72,
+				'echo'         => 1,
+				'sort_column'  => 'menu_order'); 
+			?>
+		
+
+
 		<div class="site-info">
-			<div class="ft">
+			<div class="ft-info">
 				<!--<?php if ( ! dynamic_sidebar('footer-hq') ) : ?>
 				// This will output the footer left widget
 				<?php endif; ?>-->
 			</div>
 			<div class="ft">
-				<!--<?php if ( ! dynamic_sidebar('footer-contact') ) : ?>
-				   // This will output the footer left widget
-				<?php endif; ?>-->
+				<ul>
+					<li class="ftTitle">Checking</li>
+					<?php wp_list_pages($checking)	?>
+				</ul>
+				<ul>
+					<li class="ftTitle">Savings</li>
+					<?php wp_list_pages($savings)	?>
+				</ul>
 			</div>
-			<div class="ft"><nav id="footer-nav" role="navigation">
+			<div class="ft">
+				<nav id="footer-nav" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-			</nav></div>
+				</nav>
+			</div>
+			
 			<div class="ft-copy">&copy; <?php the_time('Y') ?> Company. All rights reserved.</div>
 		</div><!-- .site-info -->
 	</footer><!-- #footer -->

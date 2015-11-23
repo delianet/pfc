@@ -8,11 +8,9 @@
 			margin-top: 0px;
 		}
 		.menu-top-menu-container{
-			    float: left;
-			    width: 95%;
 			    margin-top: 0px;
-
 			    ul{
+			    	width: 100%;
 			    	border: green solid 1px;
 				    float: right;
 				    text-align: right;
@@ -22,11 +20,6 @@
 			    	}
 			    }
 			   
-		}
-		.search{
-			border: purple solid 1px;
-			float: left;
-			width: 5%;
 		}
 
 	}

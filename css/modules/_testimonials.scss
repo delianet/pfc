@@ -1,0 +1,59 @@
+//testimonials//
+
+.testimonials{
+	border: green solid 1px;
+	background-image: url("");
+	background-position: center center;
+	background-repeat: no-repeat; 
+	background-color: #e4e4e4;
+
+	blockquote {
+		@include outer-container;
+		font-family: Georgia, serif;
+		border: red solid 1px;
+		padding: 20px;
+		position: relative;
+		color: #383838;
+
+    	&:before{
+	    	display: block;
+			content: "\201C";
+			font-size: em(80px);
+			position: absolute;
+			left: -20px;
+			top: -15px;
+			color: #7a7a7a;	
+    	}
+
+    	cite {
+			color: red;
+			font-size: em(14px);
+			font-style: normal;
+			display: block;
+			margin-top: 5px;
+			text-transform: uppercase;
+		}
+		.test-author{
+			float: right;
+		    margin-right: 105px;	
+		}
+	}
+
+	h3{
+		line-height: 1.75;
+
+    	&:after{
+			content: "\201D";
+			font-family: Georgia, serif;
+			font-size: em(40px);
+			position: relative;
+			top: 15px;
+			color: #7a7a7a;
+			padding-left: 5px;
+			line-height: .2;
+    	}
+	}
+
+		 
+}
+
