@@ -16,21 +16,44 @@
 	<footer id="footer" class="site-footer" role="contentinfo">
 
 
-							<?php 
+			<?php
+
+
 				$checking = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => 26,
+				'child_of'     => $checkingPage,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order');
 				$savings = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => 72,
+				'child_of'     => $savingsPage,
+				'echo'         => 1,
+				'sort_column'  => 'menu_order');
+				$savings = array(
+				'depth'        => 1,
+				'date_format'  => get_option('date_format'),
+				'title_li'	   => '',
+				'child_of'     => $loansPage,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order'); 
+				$savings = array(
+				'depth'        => 1,
+				'date_format'  => get_option('date_format'),
+				'title_li'	   => '',
+				'child_of'     => $cdPage,
+				'echo'         => 1,
+				'sort_column'  => 'menu_order');
+				$savings = array(
+				'depth'        => 1,
+				'date_format'  => get_option('date_format'),
+				'title_li'	   => '',
+				'child_of'     => $bsPage,
+				'echo'         => 1,
+				'sort_column'  => 'menu_order');   
 			?>
 		
 
@@ -44,7 +67,7 @@
 			<div class="ft">
 				<ul>
 					<li class="ftTitle">Checking</li>
-					<?php wp_list_pages($checking)	?>
+					<?php echo ($checkingPage);	?>
 				</ul>
 				<ul>
 					<li class="ftTitle">Savings</li>

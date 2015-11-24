@@ -1,23 +1,28 @@
+//slider//
+
 #home-slider{
-    background: pink;
+    background: $bg-gray;
     
     .slider {
-        max-width: 730px;
+        max-width: 1500px;
         margin: 0px auto;
     }
     .slide-viewer {
        position: relative;
         /* needed for IE7 */
         overflow: hidden;
-        height: 300px;
+        height: 500px;
     }
     .slide-group {
         width: 100%;
         position: relative;
     }
     .slide {
+        background-size: cover;
+        background-position: center center;
         width: 100%;
-        height: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
         display: none;
         position: absolute;
     }
@@ -32,39 +37,46 @@
 
 .image-grp {
     position: relative;
-    top: -10px;
+    top: -30px;
     @include outer-container;
         .image-button {
             position: relative;
-            outline: 4px solid red;
-            background-color: white;
             cursor: pointer;
             height: $thumbnail-height;
-            @include span-columns(3);
-                &:hover {
-                    outline: 4px solid red; 
-            }
-            
+            width: 20%;
+            float: left;    
         }
+
         .image-button img {   
-            width: 100%;
+            width: 185px;
             box-shadow: $dark-gray 1px 1px 5px;
+            display: block;
+            margin: 0 auto;
+            &:hover {
+                outline: 3px solid $purple-color; 
+            }
         }
-        .inactive{
-            outline: 0px solid red;
+        img{
+            outline: 3px solid $purple-color;
+        }
+        .inactive img{
+            outline: 0px solid $purple-color;
         }
 }
 
 // slide content
 
 .slide-content{
-    position: absolute;
-    color: white;
+    border:red solid 1px;
+    @include outer-container;
     width: 100%;
     height: 50%;
-    top: 20px;
-    text-align: center;
-    font-size: 22px;
+    margin-top: 95px;
+    text-align: left;
+        h1{
+            font-weight: 300;
+            color: $purple-color;
+        }
 }
 
 // arrows

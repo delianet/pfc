@@ -9,11 +9,13 @@
 		}
 		.menu-top-menu-container{
 			    margin-top: 0px;
+
 			    ul{
 			    	width: 100%;
 			    	border: green solid 1px;
 				    float: right;
 				    text-align: right;
+					padding: 4px 0px 6px 0px;
 
 				     li{
 			    		display: inline-block;
@@ -27,7 +29,7 @@
 
 
 header{
-	padding: 17px 10px 22px 10px;
+	padding: 10px 10px 22px 10px;
 	@include outer-container;
 	border: pink solid 1px;
 }
@@ -35,7 +37,8 @@ header{
 .site-branding{
 	padding-left: 0px;
 	position: relative;
-	@include span-columns(4);
+	top: 7px;
+	@include span-columns(3);
 
 	a{
 		color: $dark-green;
@@ -46,12 +49,11 @@ header{
 
 .menu{
 	margin-top: 6px;
-	@include span-columns(8);
+	@include span-columns(9);
 }
 
 #logo{
 	float: left;
-	width: 85px;
 }
 
 #company{

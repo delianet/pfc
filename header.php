@@ -16,8 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <?php wp_head(); ?>
@@ -46,7 +45,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<a href="<?php bloginfo( 'url' ); ?>">
-    			<img id="logo" src="<?php bloginfo('template_directory'); ?>/img/header/logo.svg" alt="logo">
+    			<img id="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo">
 		    </a>
 		    <nav id="mobile-nav">
 				<div class="hamburger">&#9776;</div>
@@ -55,6 +54,7 @@
 		</div>
 		
 		<div class="menu">
+			<div id="bank-login"><i class="fa fa-lock"></i> Online Banking Login</div>
 			<nav id="main-nav" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 			</nav>

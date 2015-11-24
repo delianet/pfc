@@ -1,11 +1,10 @@
 // Fonts
-$lato: 'Lato', sans-serif;
-$rale: 'Raleway', sans-serif;
+$robo: 'Roboto', sans-serif;
 
 // Typography
-$base-font-family: $lato;
-$heading-font-family: $lato;
-$nav-font-family: $rale;
+$base-font-family: $robo;
+$heading-font-family: $robo;
+$nav-font-family: $robo;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -22,8 +21,9 @@ $base-z-index: 0;
 
 // Colors
 $nav-color: #292929;
+$purple-color: #b1005d;
 $white: #f8f8f8;
-$black: #353535;
+$black: #070707;
 $dark-green: #006c68;
 $light-green: #66a7a4;
 $prime-hover: #baa159;
@@ -32,6 +32,7 @@ $hr-color: #d3d3d3;
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
+$bg-gray: #eeeeee;
 $light-gray: #e7e7e7;
 $text-gray: #656565;
 $list-gray: #565656;

@@ -4,18 +4,19 @@
 
 .menu-primary-container {
 	float: right;
+	position: relative;
+	z-index: 99999;
 }
 
 .menu-primary-container > ul{
-	border: red solid 1px;
 	width: 100%;
 }
 
 .menu-primary-container a{
 	font-family: $nav-font-family;
-	text-transform: uppercase;
 	font-size: em(14px);
-	color: $nav-color;
+	color: $purple-color;
+	font-weight: 500;
 
 	&:hover{
 		color: $prime-hover;
@@ -24,23 +25,36 @@
 
 .menu-primary-container > ul > li {
 	display: inline-block;
-	padding: 15px 10px;
+	padding: 8px 20px;
 	line-height: 40px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(212,210,212,1);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(212,210,212,1);
+	box-shadow: 0px 0px 8px 1px rgba(212,210,212,1);	
+	
+	&:hover{
+	
+	}
 }
 
 .sub-menu{
 	display: none;
 	max-height: 400px;
-	padding: 10px 20px;
+	padding: 10px 40px 10px 20px;
 	top: initial;
 	position: absolute;
 	overflow: hidden;
-	background-color: #eee;
-	z-index: 9999;
+	background-color: white;
+	z-index: -1;
+	margin: 12px 0px 0px -20px;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(212,210,212,1);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(212,210,212,1);
+	box-shadow: 0px 0px 8px 1px rgba(212,210,212,1);	
 }
 
 .sub-menu {
 	a{
+		color: $black;
 		display: inline-block;
 		padding: 5px 0px;
 	}

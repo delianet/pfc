@@ -30,8 +30,8 @@ get_header(); ?>
                             $slideContent = get_sub_field('slide_content');
 
                             ?>
-
-                            <div class="slide">
+                            
+                            <div class="slide" style="background-image: url(<?php echo $imageSlide; ?>);">
                                 
                                 <?php if( $slideContent ): ?>
                                     <div class="slide-content">
@@ -39,7 +39,7 @@ get_header(); ?>
                                     </div>
                                 <?php endif; ?>
 
-                                    <img src="<?php echo $imageSlide['url']; ?>" alt="<?php echo $imageSlide['alt'] ?>" />
+                                    
 
                             </div>
 
