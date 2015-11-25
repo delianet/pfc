@@ -2,7 +2,6 @@
 
 #home-info{
 	width: 100%;
-	border: pink solid 1px;
 
 	.home-text{
 		@include outer-container;
@@ -22,39 +21,32 @@
 #home-products{
 	
 	@include outer-container;
-	padding: 66px 10px 66px 10px;
+	padding: 15px 10px 66px 10px;
 
 	.product{
 		@include span-columns(4);
 		text-align: center;
 
-		img{
-			border: 2px solid transparent;
-		}
-
-		img:hover{
-			border: $medium-gray solid 2px;
-	
-		}
-
-		a{
-			color: $black;
-
-			&:hover{
-				color: $prime-hover;
-			}
-		}
-
 		h3{
+			color: $purple-color;
+			font-weight: 300;
+			font-size: em(24px);
 			padding-top: 15px;
-			font-weight: 400;
-			margin: 0px;
+			margin: 0px 0px 5px 0px;
 		}
 
 		p{
+			color: $dark-gray;
 			padding-top: 5px;
-			font-size: em(18px);
+			font-size: em(16px);
 		}
+
+		.learn-more{
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $purple-color;
+		}
+
 	}
 }
 
@@ -76,9 +68,18 @@
 			}
 
 			p{
-				font-size: em(18px);
+				font-size: em(14px);
 			}
 
 		}
+		.product:nth-child(n+2) {
+			margin-top: 30px;
+		}
 	}
+}
+
+// home arrows
+
+.fa-chevron-circle-right{
+	padding-left: 5px;
 }

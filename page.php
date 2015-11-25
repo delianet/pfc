@@ -18,8 +18,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div id="jumbo-page" class="jumbo">
 				<div class="jumbo-wrapper">
-					<div class="jumbo-text">
-						<h1>Test</h1>
+					<div class="jumbo-title">
+						<h1><?php echo get_the_title(); ?></h1>	
 					</div>
 				</div>
 			</div>

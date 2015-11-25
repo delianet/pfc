@@ -88,41 +88,38 @@ get_header(); ?>
     <section id="home-products">
     	<div class="product">
     		<a href="#">
-    			<img src="http://placehold.it/350x150" alt="">
+    			<img class="learn-more" src="http://localhost/pfc/wp-content/uploads/2015/11/credit.png" alt="Credit Card">
     		</a>
     		<a href="#">
-    			<h3>Lorem ipsum</h3>
-    			<p>Lorem ipsum dolor sit amet</p>
-    		</a>
-    	</div>
-    	<div class="product">
-    		<a href="#">
-    			<img src="http://placehold.it/350x150" alt="">
-    		</a>
-    		<a href="#">
-    			<h3>Lorem ipsum</h3>
-    			<p>Lorem ipsum dolor sit amet</p>
+    			<h3>Lorem ipsum dolore</h3>
+    			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore</p>
+                <a class="learn-more" href="">Learn More <i class="fa fa-chevron-circle-right"></i></a>
     		</a>
     	</div>
     	<div class="product">
     		<a href="#">
-    			<img src="http://placehold.it/350x150" alt="">
+    			<img src="http://localhost/pfc/wp-content/uploads/2015/11/computer.png" alt="Computer">
+    		</a>
+    		<a href="#">
+    			<h3>Lorem ipsum dolore</h3>
+    			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore</p>
+                <a class="learn-more" href="">Learn More <i class="fa fa-chevron-circle-right"></i></a>
+
+    		</a>
+    	</div>
+    	<div class="product">
+    		<a href="#">
+    			<img src="http://localhost/pfc/wp-content/uploads/2015/11/mobi.png" alt="Mobi Money">
 
     		<a href="#">
-    			<h3>Lorem ipsum</h3>
-    			<p>Lorem ipsum dolor sit amet</p>
+    			<h3>Lorem ipsum dolore</h3>
+    			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore</p>
+                <a class="learn-more" href="">Learn More <i class="fa fa-chevron-circle-right"></i></a>
     		</a>
     	</div>
     </section>
 
-    <section class="testimonials">
-         <blockquote>
-             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nostrum, suscipit molestias, fugiat aliquam assumenda.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis numquam quasi explicabo minus.</h3>
-            <cite>Read More Testimonials <span class="test-author">- M.M.</span></cite>  
-         </blockquote>
-            
-       
-    </section>
+    
 
 
 <?php get_footer(); ?>

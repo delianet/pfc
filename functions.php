@@ -130,10 +130,10 @@ function cp_widgets_init() {
 	) );
 
 	register_sidebar( array(
-        'name'          => __( 'test1', 'cp' ),
-        'id'            => 'ft-hq',
+        'name'          => __( 'footer-info', 'cp' ),
+        'id'            => 'ft-info',
         'description'   => 'This is where the description goes',
-        'before_widget' => '<aside id="ft-hq" class="ft-info">',
+        'before_widget' => '<aside id="ft-info-wrapper" class="ft-info-wrapper">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h4 class="ft-title">',
         'after_title'   => '</h4>',

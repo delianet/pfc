@@ -1,5 +1,6 @@
 // Fonts
 $robo: 'Roboto', sans-serif;
+$pt: 'PT Serif', serif;
 
 // Typography
 $base-font-family: $robo;
@@ -22,8 +23,10 @@ $base-z-index: 0;
 // Colors
 $nav-color: #292929;
 $purple-color: #b1005d;
-$white: #f8f8f8;
+$white: #fdfbfc;
 $black: #070707;
+$sub-footer: #202020;
+$sub-gray: #818080;
 $dark-green: #006c68;
 $light-green: #66a7a4;
 $prime-hover: #baa159;
@@ -34,8 +37,14 @@ $dark-gray: #333;
 $medium-gray: #999;
 $bg-gray: #eeeeee;
 $light-gray: #e7e7e7;
+$text-top-nav: #666666;
 $text-gray: #656565;
 $list-gray: #565656;
+$test-gray: #595858;
+$dark-gray: #333333;
+$test-light-gray: #acacac;
+$test-bg: #e4e4e4;
+
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -64,4 +73,5 @@ $thumbnail-height: 92px;
 $header-break: 960px;
 $nav-break: 647px;
 $contact-break: 883px;
+$mobile-break: 768px;
 $mobile-break: 768px;

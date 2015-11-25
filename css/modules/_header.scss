@@ -1,6 +1,12 @@
 //header desktop//
 
 #top-bar{
+	background-image:
+    -webkit-linear-gradient(white, #e3e3e3);
+	background-image:
+    -o-linear-gradient(white, #e3e3e3);
+	background-image:
+    linear-gradient(white, #e3e3e3);
 	background-color: $light-gray;
 	#top-nav{
 		@include outer-container;
@@ -9,21 +15,27 @@
 		}
 		.menu-top-menu-container{
 			    margin-top: 0px;
-
+	
 			    ul{
 			    	width: 100%;
-			    	border: green solid 1px;
 				    float: right;
 				    text-align: right;
 					padding: 4px 0px 6px 0px;
-
+	
 				     li{
+				    
 			    		display: inline-block;
+
+			    		a{
+			    			padding-left: 20px;
+			    			text-transform: uppercase;
+			    			color: $text-top-nav;	
+			    		}
 			    	}
 			    }
 			   
 		}
-
+	
 	}
 }
 
@@ -70,6 +82,7 @@ header{
 #mobile-nav{
 	margin-top: 25px;
 }
+
 
 //header mobile//
 

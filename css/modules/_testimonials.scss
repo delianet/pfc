@@ -1,33 +1,35 @@
 //testimonials//
 
 .testimonials{
-	border: green solid 1px;
+	border: $test-bg solid 1px;
 	padding: 0px 20px;
-	background-image: url("");
+	background-image: url("img/testimonialBG.png");
 	background-position: center center;
+	background-position-y: 65px;
 	background-repeat: no-repeat; 
-	background-color: #e4e4e4;
+	background-color: $test-bg;
 
 	blockquote {
 		@include outer-container;
-		font-family: Georgia, serif;
-		border: red solid 1px;
-		padding: 20px;
+		font-family: $pt;
+		padding: 35px 20px 35px 20px;
 		position: relative;
 		color: #383838;
 
     	&:before{
 	    	display: block;
 			content: "\201C";
-			font-size: em(80px);
+			font-size: em(65px);
 			position: absolute;
 			left: -20px;
-			top: -15px;
-			color: #7a7a7a;	
+			top: 15px;
+			color: $test-light-gray;	
     	}
 
     	cite {
-			color: red;
+			color: $purple-color;
+			font-family: $robo;
+			font-weight: 700;
 			font-size: em(14px);
 			font-style: normal;
 			display: block;
@@ -35,6 +37,7 @@
 			text-transform: uppercase;
 		}
 		.test-author{
+			color: $test-gray;
 			float: right;
 		    margin-right: 105px;	
 		}
@@ -42,19 +45,74 @@
 
 	h3{
 		line-height: 1.75;
+		font-style: italic;
+    	font-weight: 300;
+    	color: $test-gray;
+    	font-size: em(24px);
 
     	&:after{
 			content: "\201D";
-			font-family: Georgia, serif;
+			font-family: $pt;
 			font-size: em(40px);
 			position: relative;
 			top: 15px;
-			color: #7a7a7a;
+			color: $test-light-gray;
 			padding-left: 5px;
 			line-height: .2;
     	}
 	}
 
 		 
+}
+
+
+@media (max-width: $mobile-break) {
+	.testimonials{
+		border: $test-bg solid 1px;
+		padding: 0px 25px;
+		background-image: url("img/testimonialBG.png");
+		background-position: center center;
+		background-position-y: 35px;
+		background-position-x: -670px;
+		background-repeat: no-repeat; 
+		background-color: $test-bg;
+
+		blockquote {
+			@include outer-container;
+			font-family: $pt;
+			padding: 35px 10px 35px 10px;
+			position: relative;
+			color: #383838;
+
+	    	&:before{
+		    	display: block;
+				content: "\201C";
+				font-size: em(40px);
+				position: absolute;
+				left: -20px;
+				top: 15px;
+				color: $test-light-gray;	
+	    	}
+
+	    	cite {
+				font-size: em(14px);
+			}
+			.test-author{
+				display: none;
+			}
+		}
+
+		h3{
+	    	font-size: em(14px);
+
+	    	&:after{
+				font-size: em(45px);
+				top: 10px;		
+	    	}
+		}
+
+			 
+	}
+
 }
 

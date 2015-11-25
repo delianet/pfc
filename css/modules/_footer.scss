@@ -6,20 +6,38 @@
 	padding-bottom: 10px;
 	background-color: $dark-gray;
 
-
 	.site-info{
 		@include outer-container;
-		padding: 35px 10px 0px 10px;
+		padding: 35px 10px 40px 10px;
+
+		.ft-info{
+			width: 25%;
+			float: left;
+
+			#footer-logos{
+				margin-top: 20px;
+			}
+
+			ul {
+				margin-top: 10px;
+
+				li{
+					font-size: em(12px);
+				}
+			}
+		}
 
 		.ft{
-			@include span-columns(4);
-			@include omega(3n);
+			width: 18.75%;
+			float: left;
+			
 
 			ul{
 				margin: 0px;
 			}
 
 			ul li a{
+				font-size: em(12em);
 				font-weight: 400;
 				color: $white;
 			}
@@ -46,6 +64,19 @@
 	}
 }
 
+#sub-footer{
+	background-color: $sub-footer;
+	.sub-ft-wrapper{
+		@include outer-container;
+		padding: 20px 0px;
+		.ft-date{
+			font-size: em(14px);
+			color: $sub-gray;
+		}
+	}	
+}
+
+
 //footer mobile//
 
 
@@ -53,31 +84,31 @@
 	.site-footer{
 		
 		
-	.site-info{
-		@include outer-container;
-		padding: 20px 10px 0px 10px;
-		.ft{
-			margin-top: 30px;
-			text-align: center;
-			@include span-columns(12);
-			@include omega(0n);
+		.site-info{
+			@include outer-container;
+			padding: 20px 10px 0px 10px;
+			.ft{
+				margin-top: 30px;
+				text-align: center;
+				@include span-columns(12);
+				@include omega(0n);
 
-			ul{
-				margin: 0px;
+				ul{
+					margin: 0px;
+				}
+
+				ul li a{
+					font-weight: 400;
+					color: $white;
+				}
 			}
 
-			ul li a{
-				font-weight: 400;
-				color: $white;
+			.ft-copy{
+				@include span-columns(12);
+				font-size: em(12px);
+				padding-top: 40px;
 			}
-		}
 
-		.ft-copy{
-			@include span-columns(12);
-			font-size: em(12px);
-			padding-top: 40px;
 		}
-
 	}
-}
 }

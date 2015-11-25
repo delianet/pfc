@@ -1,36 +1,36 @@
 //jumbo//
 
-#jumbo-home{
-	height: 456px;
-}
-
 #jumbo-page{
-	height: 405px;
+	height: 290px;
 }
 
 .jumbo{
+	background-image:url('img/banner-private-checking.jpg');
+	background-position: center center;
 	width: 100%;
 	background-size: cover;
-	background-position: center
+	position: relative;
+	
+	.jumbo-wrapper{
+		background-color: rgba(177, 0, 93, 0.8);;
+		position:absolute;
+		bottom: 0; 
+       	width: 100%;
+		.jumbo-title{
+			@include outer-container;
+
+			h1{
+				font-size: em(42px);
+				color: $white;
+				font-weight: 300;
+				padding: 10px 0px;
+				margin: 0px;
+			}
+		}	
+	}
 }
 
-.jumbo-wrapper{
-	@include outer-container;
 
-	.jumbo-text{
-		text-align: center;
-		height: 456px;
-	}
-
-	h1{
-		margin-top: 140px;
-		color: $white;
-		display: inline-block;
-		text-align: center;
-		background-color: rgba(0, 0, 0, 0.65);
-		padding: 25px 50px;
-	}
-}
 
 //jumbo mobile//
 

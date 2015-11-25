@@ -15,7 +15,6 @@
 
 	<footer id="footer" class="site-footer" role="contentinfo">
 
-
 			<?php
 
 
@@ -56,13 +55,19 @@
 				'sort_column'  => 'menu_order');   
 			?>
 		
-
+		<section class="testimonials">
+			<blockquote>
+				<h3>It is a blessing to be a part of this family. I call Pinnacle my family because I’ve been a member since 1996, when it was SGC I love my Checking Account so many benefits come with it.</h3>
+				<cite>Read More Testimonials <i class="fa fa-chevron-circle-right"></i> <span class="test-author">- M.M.</span></cite>  
+			</blockquote>
+		</section>
 
 		<div class="site-info">
 			<div class="ft-info">
-				<!--<?php if ( ! dynamic_sidebar('footer-hq') ) : ?>
-				// This will output the footer left widget
-				<?php endif; ?>-->
+
+				<?php if ( ! dynamic_sidebar('footer-info') ) : ?>
+				<!-- This will output the footer left widget -->
+				<?php endif; ?>
 			</div>
 			<div class="ft">
 				<ul>
@@ -79,10 +84,30 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 				</nav>
 			</div>
-			
-			<div class="ft-copy">&copy; <?php the_time('Y') ?> Company. All rights reserved.</div>
+			<div class="ft">
+				<nav id="footer-nav" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+				</nav>
+			</div>
+			<div class="ft">
+				<nav id="footer-nav" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+				</nav>
+			</div>	
 		</div><!-- .site-info -->
+		
 	</footer><!-- #footer -->
+	<footer id="sub-footer">
+		<div class="sub-ft-wrapper">
+			<div class="ft-date">&copy; <?php the_time('Y') ?> Company. All rights reserved.</div>
+			<div class="sub-ft-nav">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
