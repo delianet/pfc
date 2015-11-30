@@ -1,0 +1,69 @@
+//page sidebar//
+.sidebar{
+	.sidebar-nav{
+		h2{
+			font-weight: 400;
+			background-color: $menu-dark-gray;
+			font-size: em(22px);
+			margin: 0px;
+			padding: 10px 0px 10px 25px;
+			a{
+				color: $dark-gray;
+			}
+		}
+
+		li{
+			background-color: $menu-gray;
+			padding: 10px 0px 10px 25px;		
+		}
+		li:nth-child(n+2){
+			margin-top: 2px;
+		}
+
+		ul a{
+			color: $purple-color;
+			&:hover {
+				color: $menu-active;	
+			}
+
+		}
+
+		.current_page_item > a{
+			color: $menu-active; 
+		}
+		
+	}
+}
+
+#fa-tips{
+	margin-top: 30px;
+	background-image: url('img/tips.png');
+	background-repeat: no-repeat;
+	background-position-x: 210px;
+	background-position-y: 20px;
+	h4{
+		font-weight: 400;
+		font-size: em(22px);
+		padding-right: 90px;
+		margin-bottom: 5px;
+	
+	}
+
+	color: $white;
+	padding: 20px 20px 20px 25px;
+	background-color: $purple-color;
+}
+
+
+.contact-us-side{
+	background-color: $dark-gray;
+	padding: 10px 25px 10px 25px;
+	
+	a{
+		color: $white;
+		font-weight: 700;
+		text-transform: uppercase;
+
+	}
+
+}

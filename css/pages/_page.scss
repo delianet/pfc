@@ -3,5 +3,25 @@
 .page-section{
 	@include outer-container;
 	padding: 0px 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	
+	.page-content{
+		@include span-columns(8);
+	}
+
+	.sidebar{
+		@include span-columns(4);
+		padding-left: 40px;
+	}
+	
+}
+
+
+.panel{
+    display: none;
+}
+
+.entry-footer{
+	padding-top: 10px;
 }

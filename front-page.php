@@ -12,10 +12,10 @@ get_header(); ?>
             <div class="slide-viewer">
                 
                 <div id="right-arrow" class="arrow">
-                    <img src="http://www.joblo.com/img/redesign-portal-2013/slide-arrows.png" alt="left arrow">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/right-arrow.png" alt="logo" alt="right arrow">
                 </div>
                 <div id="left-arrow" class="arrow">
-                    <img src="http://www.joblo.com/img/redesign-portal-2013/slide-arrows.png" alt="left arrow">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/left-arrow.png" alt="logo" alt="left arrow">
                 </div>
                 
 
@@ -38,17 +38,21 @@ get_header(); ?>
                                         <?php echo $slideContent; ?>
                                     </div>
                                 <?php endif; ?>
-
-                                    
+                                <div class="mobile-slide-content">
+                                    <div class="mobile-slide-content-wrapper">
+                                        <h1>Getting you started towards home ownership</h1>
+                                    </div>
+                                </div>
 
                             </div>
+
 
                         <?php endwhile; ?>
 
                     </div>
-
+    
                 <?php endif; ?>
-
+                
             </div>
         </div>
             

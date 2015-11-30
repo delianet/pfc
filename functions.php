@@ -130,9 +130,9 @@ function cp_widgets_init() {
 	) );
 
 	register_sidebar( array(
-        'name'          => __( 'footer-info', 'cp' ),
+        'name'          => __( 'Footer Info', 'cp' ),
         'id'            => 'ft-info',
-        'description'   => 'This is where the description goes',
+        'description'   => 'Footer Information',
         'before_widget' => '<aside id="ft-info-wrapper" class="ft-info-wrapper">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h4 class="ft-title">',
@@ -140,10 +140,10 @@ function cp_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'test2', 'cp' ),
-        'id'            => 'ft-contact',
-        'description'   => 'This is where the description goes',
-        'before_widget' => '<aside id="ft-contact" class="ft-info">',
+        'name'          => __( 'Financial Articles and Tips', 'cp' ),
+        'id'            => 'fa-tips',
+        'description'   => 'Financial Articles and Tips',
+        'before_widget' => '<aside id="fa-tips" class="fa-tips">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h4 class="ft-title">',
         'after_title'   => '</h4>',
@@ -163,9 +163,12 @@ function cp_scripts() {
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_script( 'cp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	
 	wp_enqueue_script( 'cp-slider', get_template_directory_uri() . '/js/slider.js', array(), '20151117', true );
 
 	wp_enqueue_script( 'cp-search', get_template_directory_uri() . '/js/search-nav.js', array(), '20151123', true );
+
+	wp_enqueue_script( 'cp-toggle-slide', get_template_directory_uri() . '/js/toggle-slide.js', array(), '20151130', true );
 
 	wp_enqueue_script( 'cp-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

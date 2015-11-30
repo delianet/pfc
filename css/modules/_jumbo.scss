@@ -18,6 +18,7 @@
        	width: 100%;
 		.jumbo-title{
 			@include outer-container;
+			padding: 0px 10px;
 
 			h1{
 				font-size: em(42px);

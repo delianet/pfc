@@ -65,7 +65,7 @@
 		<div class="site-info">
 			<div class="ft-info">
 
-				<?php if ( ! dynamic_sidebar('footer-info') ) : ?>
+				<?php if ( ! dynamic_sidebar('ft-info') ) : ?>
 				<!-- This will output the footer left widget -->
 				<?php endif; ?>
 			</div>
@@ -102,12 +102,12 @@
 			<div class="ft-date">&copy; <?php the_time('Y') ?> Company. All rights reserved.</div>
 			<div class="sub-ft-nav">
 				<ul>
-					<li></li>
+					<li>stuff</li>
 				</ul>
 			</div>
 		</div>
 		
-	</div>
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

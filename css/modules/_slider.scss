@@ -82,10 +82,15 @@
 // arrows
 
 .arrow{
+    opacity: 0.4;
+    display: none;
     position: absolute;
     z-index: 999999;
-    top: 45%;
-     cursor: pointer;
+    top: 35%;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;  
+    }
 }
 
 #right-arrow{
@@ -95,4 +100,47 @@
 #left-arrow{
     left:0;
     padding-left: 20px;
+}
+
+
+// mobile
+
+.mobile-slide-content{
+    display: none;
+    width: 100%;
+    position:absolute;
+    bottom: 0px;
+    background-color: $white;
+    border: green solid 1px;
+    
+    .mobile-slide-content-wrapper{
+        @include outer-container;
+        
+        h1{
+            padding: 20px 0px 0px 20px;
+            font-weight: 400;
+            color: $purple-color;
+            font-size: em(24px);   
+        }   
+    }  
+    
+}
+
+
+
+@media (max-width: $mobile-slider) {
+    .arrow{
+        display: block;
+    }
+
+    .image-grp {
+        display: none;
+    }
+    .slide-content{
+        display: none;
+    }
+
+    .mobile-slide-content{
+        display: block;
+    }
 }
