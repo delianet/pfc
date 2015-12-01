@@ -16,49 +16,54 @@
 	<footer id="footer" class="site-footer" role="contentinfo">
 
 			<?php
-
-
 				$checking = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => $checkingPage,
+				'child_of'     => 16,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order');
 				$savings = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => $savingsPage,
+				'child_of'     => 18,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order');
-				$savings = array(
+				$loans = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => $loansPage,
+				'child_of'     => 20,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order'); 
-				$savings = array(
+				$creditDebit = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => $cdPage,
+				'child_of'     => 22,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order');
-				$savings = array(
+				$business = array(
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => $bsPage,
+				'child_of'     => 367,
 				'echo'         => 1,
-				'sort_column'  => 'menu_order');   
+				'sort_column'  => 'menu_order');
+				$services = array(
+				'depth'        => 1,
+				'date_format'  => get_option('date_format'),
+				'title_li'	   => '',
+				'child_of'     => 709,
+				'echo'         => 1,
+				'sort_column'  => 'menu_order');    
 			?>
 		
 		<section class="testimonials">
 			<blockquote>
 				<h3>It is a blessing to be a part of this family. I call Pinnacle my family because I’ve been a member since 1996, when it was SGC I love my Checking Account so many benefits come with it.</h3>
-				<cite>Read More Testimonials <i class="fa fa-chevron-circle-right"></i> <span class="test-author">- M.M.</span></cite>  
+				<cite>Read More Testimonials <i class="fa fa-chevron-circle-right"></i> <span class="test-author">- M.M.</span></cite> 
 			</blockquote>
 		</section>
 
@@ -72,27 +77,34 @@
 			<div class="ft">
 				<ul>
 					<li class="ftTitle">Checking</li>
-					<?php echo ($checkingPage);	?>
+					<?php wp_list_pages($checking)	?>
 				</ul>
-				<ul>
+				<ul class="ft-second-tier">
 					<li class="ftTitle">Savings</li>
 					<?php wp_list_pages($savings)	?>
 				</ul>
 			</div>
 			<div class="ft">
-				<nav id="footer-nav" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-				</nav>
+				<ul>
+					<li class="ftTitle">Loans</li>
+					<?php wp_list_pages($loans)	?>
+				</ul>
 			</div>
 			<div class="ft">
-				<nav id="footer-nav" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-				</nav>
+				<ul>
+					<li class="ftTitle">Credit & Debit</li>
+					<?php wp_list_pages($creditDebit)	?>
+				</ul>
+				<ul class="ft-second-tier">
+					<li class="ftTitle">Business Services</li>
+					<?php wp_list_pages($business)	?>
+				</ul>
 			</div>
 			<div class="ft">
-				<nav id="footer-nav" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-				</nav>
+				<ul>
+					<li class="ftTitle">Services</li>
+					<?php wp_list_pages($services)	?>
+				</ul>
 			</div>	
 		</div><!-- .site-info -->
 		

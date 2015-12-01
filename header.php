@@ -32,7 +32,7 @@
 		</nav>
 		
 		<li class="nav-search">
-			<form role="search" method="get" class="search-form" action="http://localhost/pfc/">
+			<form role="search" method="get" class="search-form" action="http://pfc.delianet.com/">
 				<label>
 					<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
 				</label>
@@ -55,7 +55,24 @@
 		</div>
 		
 		<div class="menu">
-			<div id="bank-login"><i class="fa fa-lock"></i> Online Banking Login</div>
+			
+			<div id="bank-login"><a href="javascript:void"><i class="fa fa-lock"></i> Online Banking Login</a></div>
+			<div id="login-box">
+				<div class="login-container">
+					<form action="https://pinnaclefcu.cue-orb.com/Authentication/Username" method="post">
+						
+							<input type="text2" ID="login-field" name="UserName" placeholder="User ID">
+							<input type="submit" ID="login-submit" name="submit" value="Login" alt="Login" border="0">
+							<a id="cancel" href="javascript:void">Cancel</a>
+          			</form>
+          			<div id="login-links">
+          				<a href="https://pinnaclefcu.cue-orb.com/Registration">Enroll Now <i class="fa fa-chevron-circle-right"></i></a>
+          				<a href="https://pinnaclefcu.cue-orb.com/Authentication#/browser-support">Browser Support <i class="fa fa-chevron-circle-right"></i></a>
+          			</div>
+				</div>
+				<div id="mobile-banking"><a href="https://pinnaclefcu.cue-orb.com/Mobile/Authentication">Mobile Banking</a></div>	
+			</div>
+			
 			<nav id="main-nav" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 			</nav>

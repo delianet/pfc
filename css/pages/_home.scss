@@ -45,6 +45,10 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			color: $purple-color;
+
+			&:hover{
+				color: $dark-gray;
+			}
 		}
 
 	}

@@ -626,7 +626,7 @@ html {
             padding-left: 20px;
             text-transform: uppercase;
             color: #666666;
-            font-size: 0.875em; }
+            font-size: 0.75em; }
 
 header {
   padding: 20px 0px 10px 0px;
@@ -671,7 +671,7 @@ header {
   left: 95px;
   vertical-align: middle; }
   #company:hover {
-    color: #baa159; }
+    color: #333333; }
 
 #mobile-nav {
   margin-top: 25px; }
@@ -712,11 +712,11 @@ header {
 
 .menu-primary-container a {
   font-family: "Roboto", sans-serif;
-  font-size: 0.875em;
+  font-size: 0.9375em;
   color: #b1005d;
   font-weight: 500; }
   .menu-primary-container a:hover {
-    color: #baa159; }
+    color: #333333; }
 
 .menu-primary-container > ul > li {
   display: inline-block;
@@ -728,7 +728,7 @@ header {
 
 .sub-menu {
   display: none;
-  max-height: 400px;
+  max-height: 600px;
   padding: 10px 40px 10px 20px;
   top: initial;
   position: absolute;
@@ -737,10 +737,14 @@ header {
   margin: 8px 0px 0px -20px;
   background-color: #f4f4f4; }
 
+.sub-menu li {
+  line-height: 2.75em; }
 .sub-menu a {
   color: #070707;
   display: inline-block;
-  padding: 5px 0px; }
+  padding: 0px 0px; }
+  .sub-menu a:hover {
+    color: #b1005d; }
 
 @media (max-width: 960px) {
   .menu-primary-container {
@@ -772,7 +776,7 @@ header {
     background-color: #eee;
     margin-top: 30px; }
     .sub-menu li {
-      padding: 15px 20px; } }
+      padding: 0px 20px; } }
 .hamburger {
   text-align: right;
   background: none;
@@ -807,7 +811,14 @@ header {
     display: none; } }
 @media (max-width: 647px) {
   #main-nav {
-    display: none; } }
+    display: none; }
+
+  .menu-primary-container {
+    padding: 0px; }
+
+  #menu-primary {
+    margin: 0px;
+    padding: 20px 0px; } }
 .site-footer {
   color: #fdfbfc;
   width: 100%;
@@ -850,12 +861,15 @@ header {
       .site-footer .site-info .ft-copy:last-child {
         margin-right: 0; }
 
+.ft-second-tier {
+  padding-top: 30px; }
+
 #footer-nav ul li a {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
   #footer-nav ul li a:hover {
-    color: #baa159; }
+    color: #333333; }
 
 #sub-footer {
   background-color: #202020; }
@@ -1153,6 +1167,10 @@ header {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
+  #bank-login:hover {
+    background-color: #8e0e51; }
+  #bank-login a {
+    color: #fdfbfc; }
   #bank-login .fa-lock {
     padding-right: 5px; }
 
@@ -1177,6 +1195,8 @@ header {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
+  .slider-search:hover {
+    background-color: #8e0e51; }
 
 @media (max-width: 768px) {
   #bank-login {
@@ -1202,6 +1222,77 @@ header {
     vertical-align: middle;
     white-space: nowrap;
     text-align: center; } }
+.menu {
+  position: relative; }
+
+#login-box {
+  display: none;
+  z-index: 999999;
+  float: right;
+  width: 235px;
+  position: absolute;
+  top: 38px;
+  right: 0px;
+  height: 200px;
+  background-color: #b1005d; }
+
+.login-container {
+  padding: 10px 20px; }
+  .login-container a {
+    color: #fdfbfc;
+    opacity: .65;
+    font-weight: 500; }
+    .login-container a:hover {
+      opacity: 1; }
+
+#login-field {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 10px 15px; }
+
+#login-submit {
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #333333; }
+
+#cancel {
+  text-transform: uppercase;
+  padding-left: 20px;
+  display: inline-block;
+  top: 10px;
+  position: relative; }
+
+#login-links {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+#mobile-banking {
+  padding: 10px 20px;
+  background-color: #8e0e51;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+  #mobile-banking a {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fdfbfc;
+    opacity: .65; }
+    #mobile-banking a:hover {
+      opacity: 1; }
+
+@media (max-width: 768px) {
+  #login-box {
+    display: none;
+    z-index: 999999;
+    float: right;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    height: 200px;
+    background-color: #b1005d; } }
 #home-info {
   width: 100%; }
   #home-info .home-text {
@@ -1250,6 +1341,8 @@ header {
       font-weight: 700;
       text-transform: uppercase;
       color: #b1005d; }
+      #home-products .product .learn-more:hover {
+        color: #333333; }
 
 @media (max-width: 768px) {
   #home-products {

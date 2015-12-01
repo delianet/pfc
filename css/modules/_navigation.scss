@@ -14,7 +14,7 @@
 
 .menu-primary-container a{
 	font-family: $nav-font-family;
-	font-size: em(14px);
+	font-size: em(15px);
 	color: $purple-color;
 	font-weight: 500;
 
@@ -36,7 +36,7 @@
 
 .sub-menu{
 	display: none;
-	max-height: 400px;
+	max-height: 600px;
 	padding: 10px 40px 10px 20px;
 	top: initial;
 	position: absolute;
@@ -47,10 +47,17 @@
 }
 
 .sub-menu {
+	li{
+		line-height: em(44px);
+	}
 	a{
 		color: $black;
 		display: inline-block;
-		padding: 5px 0px;
+		padding: 0px 0px;
+
+		&:hover{
+			color: $purple-color;
+		}
 	}
 
 }
@@ -100,7 +107,7 @@
 		margin-top: 30px;
 
 		li{
-			padding: 15px 20px;
+			padding: 0px 20px;
 		}
 		
 	}
@@ -149,6 +156,15 @@
 @media (max-width: $nav-break) {
 	#main-nav{
 		display: none;
+	}
+
+	.menu-primary-container{
+		padding: 0px;
+	}
+
+	#menu-primary{
+		margin: 0px;
+		padding: 20px 0px;
 	}
 }
 

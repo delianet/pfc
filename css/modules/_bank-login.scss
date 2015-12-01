@@ -1,0 +1,96 @@
+.menu{
+	position: relative;
+}
+	
+#login-box{
+	display: none;
+	z-index: 999999;
+	float: right;
+	width: 235px;
+	position: absolute;
+	top: 38px;
+	right: 0px;
+	height: 200px;
+	background-color: $purple-color;	
+}
+
+.login-container{
+	padding: 10px 20px;
+
+	a{
+		color: $white;
+		opacity: .65;
+		font-weight: 500;
+
+		&:hover{
+			opacity: 1;	
+		}
+	}
+}
+
+#login-field{
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	padding: 10px 15px;
+}
+
+#login-submit{
+	text-transform: uppercase;
+	margin-top: 20px;
+	border-radius: 5px;
+	background-color: $p-color;
+}
+
+#cancel{
+	
+	text-transform: uppercase;
+	padding-left: 20px;
+	display: inline-block;
+	top: 10px;
+	position: relative;
+	
+}
+
+
+#login-links{
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+
+	
+}
+
+#mobile-banking{
+	padding: 10px 20px;
+	background-color: $purple-dark;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	a{
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $white;
+		opacity: .65;
+
+		&:hover{
+			opacity: 1;	
+		}
+		
+	}
+}
+
+
+@media (max-width: $mobile-break) {
+	#login-box{
+		display: none;
+		z-index: 999999;
+		float: right;
+		width: 100%;
+		position: absolute;
+		top: 70px;
+		right: 0px;
+		height: 200px;
+		background-color: $purple-color;	
+	}
+}

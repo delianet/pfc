@@ -1,40 +1,15 @@
 //nav//
 
-//module dropdown
+$top = $('.sub-menu').parent();
+$sub = $('.sub-menu');
 
-(function() {
+$top.on('mouseenter', function(){
+    $(this).find($sub).stop().slideDown(100);    
+});
 
-  var dropdown = {
-    init: function(){
-      this.cacheDom();
-      this.bindEvents();
-      this.render();
-    },
-    cacheDom: function(){
-      this.$top =  $('.sub-menu:first').parent();
-      this.$sub = $('.sub-menu:first');
-    },
-    bindEvents: function(){
-      this.$top.on('mouseenter', this.dropDown.bind(this));
-      this.$top.on('mouseleave', this.slideUp.bind(this));
-    },
-    render: function(){
-
-    },
-    dropDown: function(){
-      this.$sub.stop().slideDown(100); 
-      this.render();
-    },
-    slideUp: function(){
-      this.$sub.stop().slideUp(100);
-      this.render();
-    }
-  
-  };
-
-  dropdown.init();
-
-})();
+$top.on('mouseleave', function(){
+    $(this).find($sub).stop().slideUp(100);    
+});
 
 //module hamburger toggle
 
@@ -53,6 +28,8 @@
             this.$break = 647;
             this.$win = $(window);
 
+            this.$sub = $(".sub-menu");
+
         },
         bindEvents: function () {
             this.$hamburger.click(this.hSlide.bind(this));
@@ -61,6 +38,7 @@
         },
         render: function () {
             this.$cross.hide();
+            this.$sub.hide();
         },
         hSlide: function () {
             this.$nav.slideToggle(400, this.hOpen.bind(this));
