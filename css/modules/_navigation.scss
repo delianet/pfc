@@ -14,7 +14,7 @@
 
 .menu-primary-container a{
 	font-family: $nav-font-family;
-	font-size: em(15px);
+	font-size: em(16px);
 	color: $purple-color;
 	font-weight: 500;
 
@@ -42,6 +42,7 @@
 	position: absolute;
 	overflow: hidden;
 	background-color: white;
+	width: 290px;
 	margin: 8px 0px 0px -20px;
 	background-color: $nav-bg-hover;
 }
@@ -51,6 +52,7 @@
 		line-height: em(44px);
 	}
 	a{
+		font-size: em(14px); 
 		color: $black;
 		display: inline-block;
 		padding: 0px 0px;
@@ -97,6 +99,7 @@
 	}
 
 	.sub-menu{
+		width: 100%;
 		display: none;
 		max-height: initial;
 		padding: 0px 0px 0px 20px;

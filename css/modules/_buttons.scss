@@ -61,6 +61,32 @@
         }  
 }
 
+.page-button{
+    margin: 20px 0px;
+    background-color: $purple-color;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:hover{
+            background-color: $purple-dark;
+        }  
+}
+
 
 @media (max-width: $mobile-break) {
     #bank-login{

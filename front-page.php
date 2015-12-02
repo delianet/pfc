@@ -92,7 +92,7 @@ get_header(); ?>
     <section id="home-products">
     	<div class="product">
     		<a href="#">
-    			<img class="learn-more" src="http://localhost/pfc/wp-content/uploads/2015/11/credit.png" alt="Credit Card">
+    			<img class="learn-more" src="/wp-content/uploads/2015/12/credit.png" alt="Credit Card">
     		</a>
     		<a href="#">
     			<h3>Lorem ipsum dolore</h3>
@@ -102,7 +102,7 @@ get_header(); ?>
     	</div>
     	<div class="product">
     		<a href="#">
-    			<img src="http://localhost/pfc/wp-content/uploads/2015/11/computer.png" alt="Computer">
+    			<img src="/wp-content/uploads/2015/12/computer.png" alt="Computer">
     		</a>
     		<a href="#">
     			<h3>Lorem ipsum dolore</h3>
@@ -113,7 +113,7 @@ get_header(); ?>
     	</div>
     	<div class="product">
     		<a href="#">
-    			<img src="http://localhost/pfc/wp-content/uploads/2015/11/mobi.png" alt="Mobi Money">
+    			<img src="/wp-content/uploads/2015/12/mobi.png" alt="Mobi Money">
 
     		<a href="#">
     			<h3>Lorem ipsum dolore</h3>

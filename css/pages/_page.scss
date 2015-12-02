@@ -14,14 +14,62 @@
 		@include span-columns(4);
 		padding-left: 40px;
 	}
+
+	ul{
+		padding-bottom: 10px;
+	}
 	
 }
 
 
 .panel{
     display: none;
+    padding-bottom: 20px;
 }
 
 .entry-footer{
 	padding-top: 10px;
+}
+
+.interior-page-image{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	img{
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+i{
+	font-weight: 900;
+}
+
+.apple-apps{
+	width: 100%;
+	overflow: hidden;
+
+	.app-img{
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: $mobile-slider) {
+	.page-section{
+		@include outer-container;
+		padding: 0px 10px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		
+		.page-content{
+			@include span-columns(12);
+		}
+
+		.sidebar{
+			@include span-columns(12);
+			padding: 0px;
+		}
+	
+	}
 }

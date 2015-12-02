@@ -712,7 +712,7 @@ header {
 
 .menu-primary-container a {
   font-family: "Roboto", sans-serif;
-  font-size: 0.9375em;
+  font-size: 1em;
   color: #b1005d;
   font-weight: 500; }
   .menu-primary-container a:hover {
@@ -734,12 +734,14 @@ header {
   position: absolute;
   overflow: hidden;
   background-color: white;
+  width: 290px;
   margin: 8px 0px 0px -20px;
   background-color: #f4f4f4; }
 
 .sub-menu li {
   line-height: 2.75em; }
 .sub-menu a {
+  font-size: 0.875em;
   color: #070707;
   display: inline-block;
   padding: 0px 0px; }
@@ -767,6 +769,7 @@ header {
     line-height: 10px; }
 
   .sub-menu {
+    width: 100%;
     display: none;
     max-height: initial;
     padding: 0px 0px 0px 20px;
@@ -883,8 +886,36 @@ header {
       content: "";
       display: table; }
     #sub-footer .sub-ft-wrapper .ft-date {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      padding-top: 5px;
       font-size: 0.875em;
       color: #818080; }
+      #sub-footer .sub-ft-wrapper .ft-date:last-child {
+        margin-right: 0; }
+    #sub-footer .sub-ft-wrapper .sub-ft-nav {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      #sub-footer .sub-ft-wrapper .sub-ft-nav:last-child {
+        margin-right: 0; }
+
+#menu-footer-menu {
+  float: right;
+  width: 100%; }
+  #menu-footer-menu li {
+    float: right;
+    text-align: right;
+    display: inline-block; }
+    #menu-footer-menu li a {
+      color: #b6b5b5;
+      padding-right: 15px;
+      font-size: 0.875em; }
+      #menu-footer-menu li a:hover {
+        color: #fdfbfc; }
 
 @media (max-width: 768px) {
   .site-footer .site-info {
@@ -896,6 +927,12 @@ header {
       clear: both;
       content: "";
       display: table; }
+    .site-footer .site-info .ft-info {
+      text-align: center;
+      width: 100%;
+      float: none; }
+      .site-footer .site-info .ft-info #footer-logos {
+        margin-top: 20px; }
     .site-footer .site-info .ft {
       margin-top: 30px;
       text-align: center;
@@ -923,11 +960,53 @@ header {
       padding-top: 40px; }
       .site-footer .site-info .ft-copy:last-child {
         margin-right: 0; } }
+@media (max-width: 768px) {
+  #sub-footer .sub-ft-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px; }
+    #sub-footer .sub-ft-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #sub-footer .sub-ft-wrapper .ft-date {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-align: center; }
+      #sub-footer .sub-ft-wrapper .ft-date:last-child {
+        margin-right: 0; }
+    #sub-footer .sub-ft-wrapper .sub-ft-nav {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #sub-footer .sub-ft-wrapper .sub-ft-nav:last-child {
+        margin-right: 0; } }
+@media (max-width: 768px) {
+  #menu-footer-menu {
+    float: right;
+    width: 100%;
+    padding: 0px 10px; }
+    #menu-footer-menu li {
+      float: none;
+      text-align: center;
+      display: block; }
+      #menu-footer-menu li a {
+        color: #b6b5b5;
+        padding-right: 15px;
+        font-size: 0.875em; }
+        #menu-footer-menu li a:hover {
+          color: #fdfbfc; } }
 #jumbo-page {
   height: 290px; }
 
+#top-nav-page {
+  height: 75px; }
+
 .jumbo {
-  background-image: url("img/banner-private-checking.jpg");
   background-position: center center;
   width: 100%;
   background-size: cover;
@@ -947,7 +1026,27 @@ header {
         content: "";
         display: table; }
       .jumbo .jumbo-wrapper .jumbo-title h1 {
-        font-size: 2.625em;
+        font-size: 2.375em;
+        color: #fdfbfc;
+        font-weight: 300;
+        padding: 10px 0px;
+        margin: 0px; }
+  .jumbo .top-nav-jumbo-wrapper {
+    background-color: #b1005d;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .jumbo .top-nav-jumbo-wrapper .jumbo-title {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px 10px; }
+      .jumbo .top-nav-jumbo-wrapper .jumbo-title::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .jumbo .top-nav-jumbo-wrapper .jumbo-title h1 {
+        font-size: 2.375em;
         color: #fdfbfc;
         font-weight: 300;
         padding: 10px 0px;
@@ -955,6 +1054,9 @@ header {
 
 @media (max-width: 768px) {
   .jumbo-wrapper h1 {
+    padding: 25px 10px; }
+
+  .top-nav-jumbo-wrapper h1 {
     padding: 25px 10px; } }
 .sidebar .sidebar-nav h2 {
   font-weight: 400;
@@ -980,7 +1082,7 @@ header {
   margin-top: 30px;
   background-image: url("img/tips.png");
   background-repeat: no-repeat;
-  background-position-x: 210px;
+  background-position-x: 165px;
   background-position-y: 20px;
   color: #fdfbfc;
   padding: 20px 20px 20px 25px;
@@ -1198,6 +1300,29 @@ header {
   .slider-search:hover {
     background-color: #8e0e51; }
 
+.page-button {
+  margin: 20px 0px;
+  background-color: #b1005d;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .page-button:hover {
+    background-color: #8e0e51; }
+
 @media (max-width: 768px) {
   #bank-login {
     margin-top: 30px;
@@ -1229,7 +1354,7 @@ header {
   display: none;
   z-index: 999999;
   float: right;
-  width: 235px;
+  width: 236px;
   position: absolute;
   top: 38px;
   right: 0px;
@@ -1445,7 +1570,7 @@ header {
   opacity: 0.4;
   display: none;
   position: absolute;
-  z-index: 999999;
+  z-index: 9999;
   top: 35%;
   cursor: pointer; }
   .arrow:hover {
@@ -1464,8 +1589,7 @@ header {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  background-color: #fdfbfc;
-  border: green solid 1px; }
+  background-color: #fdfbfc; }
   .mobile-slide-content .mobile-slide-content-wrapper {
     max-width: 1000px;
     margin-left: auto;
@@ -1481,6 +1605,10 @@ header {
       font-size: 1.5em; }
 
 @media (max-width: 996px) {
+  #home-slider .slide {
+    background-position-x: -650px;
+    background-position-y: -50px; }
+
   .arrow {
     display: block; }
 
@@ -1518,11 +1646,60 @@ header {
     padding-left: 40px; }
     .page-section .sidebar:last-child {
       margin-right: 0; }
+  .page-section ul {
+    padding-bottom: 10px; }
 
 .panel {
-  display: none; }
+  display: none;
+  padding-bottom: 20px; }
 
 .entry-footer {
   padding-top: 10px; }
+
+.interior-page-image {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px; }
+  .interior-page-image img {
+    margin: 0 auto;
+    display: block; }
+
+i {
+  font-weight: 900; }
+
+.apple-apps {
+  width: 100%;
+  overflow: hidden; }
+  .apple-apps .app-img {
+    float: left;
+    margin-right: 20px; }
+
+@media (max-width: 996px) {
+  .page-section {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .page-section::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .page-section .page-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .page-section .page-content:last-child {
+        margin-right: 0; }
+    .page-section .sidebar {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 0px; }
+      .page-section .sidebar:last-child {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

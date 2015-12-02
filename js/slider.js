@@ -98,7 +98,7 @@ $('.slider').each(function () { // For every slider
         })
     }
 
-    // advance(); // Script is set up, advance() to move it
+    advance(); // Script is set up, advance() to move it
     imgBut(); // init image buttons
     initArrow();  //init arrows
 

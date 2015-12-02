@@ -1,33 +1,16 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package cp
- */
-
+/*
+Template Name: Top Nav Template
+*/
+?>
+<?php
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			
-			<?php
-
-			global $post;
-			$parent_id = $post->post_parent; 
-
-			$Jumboimage = get_field('jumbo_banner', $parent_id);
-
-			?>
-
-			<div id="jumbo-page" class="jumbo" style="background-image: url( <?php echo $Jumboimage['url']; ?> );">
-				<div class="jumbo-wrapper">
+			<div id="top-nav-page" class="jumbo">
+				<div class="top-nav-jumbo-wrapper">
 					<div class="jumbo-title">
 						<h1><?php echo get_the_title(); ?></h1>	
 					</div>
@@ -35,7 +18,7 @@ get_header(); ?>
 			</div>
 			<div class="page-section">
 				<div class="page-content">
-					
+			
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php the_content(); ?>

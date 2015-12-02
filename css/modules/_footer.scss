@@ -74,10 +74,37 @@
 		@include outer-container;
 		padding: 20px 0px;
 		.ft-date{
+			@include span-columns(3);
+			padding-top: 5px;
 			font-size: em(14px);
 			color: $sub-gray;
 		}
+		.sub-ft-nav{
+			@include span-columns(9);
+		}
 	}	
+}
+
+#menu-footer-menu{
+	float:right;
+	width: 100%;
+	
+		li{
+			float: right;
+			text-align: right;
+			display: inline-block;
+
+			a{
+				color: $footer-gray;
+				padding-right: 15px;
+				font-size: em(14px);
+
+				&:hover{
+					color: $white;
+				}
+			}
+		}
+	
 }
 
 
@@ -87,10 +114,21 @@
 @media (max-width: $mobile-break) {
 	.site-footer{
 		
-		
 		.site-info{
 			@include outer-container;
 			padding: 20px 10px 0px 10px;
+
+			.ft-info{
+				text-align: center;
+				width: 100%;
+				float: none;
+
+				#footer-logos{
+					margin-top: 20px;
+				}
+
+			}
+			
 			.ft{
 				margin-top: 30px;
 				text-align: center;
@@ -114,5 +152,49 @@
 			}
 
 		}
+	}
+}
+
+
+
+@media (max-width: $mobile-break) {
+	#sub-footer{
+		.sub-ft-wrapper{
+			@include outer-container;
+			padding: 20px 0px;
+			.ft-date{
+				@include span-columns(12);
+				text-align: center;
+			}
+			.sub-ft-nav{
+				@include span-columns(12);
+
+			}
+		}	
+	}
+}
+
+@media (max-width: $mobile-break) {
+	#menu-footer-menu{
+		float:right;
+		width: 100%;
+		padding: 0px 10px;
+		
+			li{
+				float: none;
+				text-align: center;
+				display: block;
+
+				a{
+					color: $footer-gray;
+					padding-right: 15px;
+					font-size: em(14px);
+
+					&:hover{
+						color: $white;
+					}
+				}
+			}
+		
 	}
 }

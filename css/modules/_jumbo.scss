@@ -3,16 +3,19 @@
 #jumbo-page{
 	height: 290px;
 }
+#top-nav-page{
+	height: 75px;	
+}
+
 
 .jumbo{
-	background-image:url('img/banner-private-checking.jpg');
 	background-position: center center;
 	width: 100%;
 	background-size: cover;
 	position: relative;
 	
 	.jumbo-wrapper{
-		background-color: rgba(177, 0, 93, 0.8);;
+		background-color: rgba(177, 0, 93, 0.8);
 		position:absolute;
 		bottom: 0; 
        	width: 100%;
@@ -21,7 +24,25 @@
 			padding: 0px 10px;
 
 			h1{
-				font-size: em(42px);
+				font-size: em(38px);
+				color: $white;
+				font-weight: 300;
+				padding: 10px 0px;
+				margin: 0px;
+			}
+		}	
+	}
+	.top-nav-jumbo-wrapper{
+		background-color: $purple-color;
+		position:absolute;
+		bottom: 0; 
+       	width: 100%;
+		.jumbo-title{
+			@include outer-container;
+			padding: 0px 10px;
+
+			h1{
+				font-size: em(38px);
 				color: $white;
 				font-weight: 300;
 				padding: 10px 0px;
@@ -32,7 +53,6 @@
 }
 
 
-
 //jumbo mobile//
 
 @media (max-width: $mobile-break) {
@@ -41,4 +61,10 @@
 			padding: 25px 10px;
 		}
 	}
+	.top-nav-jumbo-wrapper{
+		h1{
+			padding: 25px 10px;
+		}
+	}
+
 }

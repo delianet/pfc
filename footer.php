@@ -20,7 +20,7 @@
 				'depth'        => 1,
 				'date_format'  => get_option('date_format'),
 				'title_li'	   => '',
-				'child_of'     => 16,
+				'child_of'     => 4008,
 				'echo'         => 1,
 				'sort_column'  => 'menu_order');
 				$savings = array(
@@ -69,7 +69,6 @@
 
 		<div class="site-info">
 			<div class="ft-info">
-
 				<?php if ( ! dynamic_sidebar('ft-info') ) : ?>
 				<!-- This will output the footer left widget -->
 				<?php endif; ?>
@@ -111,11 +110,9 @@
 	</footer><!-- #footer -->
 	<footer id="sub-footer">
 		<div class="sub-ft-wrapper">
-			<div class="ft-date">&copy; <?php the_time('Y') ?> Company. All rights reserved.</div>
+			<div class="ft-date">&copy; <?php the_time('Y') ?> Pinnacle FCU.</div>
 			<div class="sub-ft-nav">
-				<ul>
-					<li>stuff</li>
-				</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 			</div>
 		</div>
 		
